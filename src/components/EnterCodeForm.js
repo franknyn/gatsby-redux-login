@@ -41,15 +41,14 @@ const EnterCodeForm = ({
   const handleLogin = () => {
     dispatch(login(opportunityId, accessCode))
   }
-  const pinInput = useRef();
+  const pinInput = useRef()
 
   const clearAccessCode = () => {
-    for (let i = 0; i < 6; i++)
-    {
-      pinInput.current.state.input[i] = '';
-      pinInput.current.textInput[i].value = '';
+    for (let i = 0; i < 6; i++) {
+      pinInput.current.state.input[i] = ""
+      pinInput.current.textInput[i].value = ""
     }
-    setAccessCode('')
+    setAccessCode("")
   }
 
   return (
@@ -68,7 +67,7 @@ const EnterCodeForm = ({
       <h2 className="text-dark mb-4">Enter your verification code</h2>
 
       <p className="mb-4">We just sent a verification code to {mobile}</p>
-      <p className="mb-4">Enter the code below</p>
+      <p className="mb-4">Enter the code below (111111)</p>
       <ReactCodeInput
         className="d-flex mb-4"
         type="number"
@@ -114,7 +113,7 @@ function mapStateToProps(state) {
   return {
     opportunityId,
     isAuthenticating,
-    mobile: encodePhone(mobile), 
+    mobile: encodePhone(mobile),
   }
 }
 

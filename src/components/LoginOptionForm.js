@@ -5,7 +5,7 @@ import { connect } from "react-redux"
 import { fetchUserByOpportunityId } from "../actions/userActions"
 import { receiveOpportunityId } from "../actions/opportunityActions"
 import { sendAccessCode } from "../actions/authenticationActions"
-import { encodePhone, encodeEmail} from "../helpers"
+import { encodePhone, encodeEmail } from "../helpers"
 import withLocation from "./WithLocation"
 
 const LoginOptionForm = ({
@@ -33,7 +33,7 @@ const LoginOptionForm = ({
       dispatch(receiveOpportunityId(search.oppId))
       dispatch(fetchUserByOpportunityId(search.oppId))
     }
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const spinner = <Spinner animation="border" size="sm" />
@@ -46,15 +46,6 @@ const LoginOptionForm = ({
   ) : (
     <Form className="text-center">
       <h2 className="text-dark">Choose your security method</h2>
-      <p className="mt-4">
-        Before we step you through your estimated tax savings (not to mention
-        your shiny new car options), we need to verify your identity.
-      </p>
-      <p>
-        Choose where you want to receive your one-time verification code below.
-        Then you’ll be on the road to browsing convenient and tax-effective
-        benefits in now time.
-      </p>
       <Form.Check
         custom
         type={`radio`}
@@ -97,7 +88,9 @@ const LoginOptionForm = ({
         />
         <Form.Check.Label className="text-dark">
           <span>Receive by email</span>
-          <span className="mt-3">Send code to {isFetchingUser ? spinner : email}</span>
+          <span className="mt-3">
+            Send code to {isFetchingUser ? spinner : email}
+          </span>
         </Form.Check.Label>
       </Form.Check>
       <Button
