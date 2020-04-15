@@ -1,13 +1,7 @@
 import React, { useEffect } from "react"
 import { connect } from "react-redux"
 import { Link } from "gatsby"
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Row,
-  Col,
-} from "react-bootstrap"
+import { Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap"
 import { IoIosClose } from "react-icons/io"
 import { isLoggedIn } from "../services/authenticationService"
 import { fetchOpportunityInfo } from "../actions/opportunityActions"
@@ -15,7 +9,6 @@ import { formatCurrency } from "src/helpers"
 
 import LogoutButton from "./LogoutButton"
 import RequestCallbackButton from "./RequestCallbackButton"
-import Icon from "./Icon"
 
 const CustomNavbar = ({
   consultant,
@@ -28,15 +21,13 @@ const CustomNavbar = ({
     if (isAuthenticated && opportunityId) {
       dispatch(fetchOpportunityInfo(opportunityId))
     }
-   // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, opportunityId])
   const employer = customer.employer || {}
   return (
     <Navbar expand="md" variant="light">
       <div className="container-md navbar-container flex-row-reverse flex-md-row">
-        <Navbar.Brand href="#home">
-          <Icon src="Logo" />
-        </Navbar.Brand>
+        <Navbar.Brand href="#home"></Navbar.Brand>
         {isLoggedIn() && (
           <>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -86,7 +77,9 @@ const CustomNavbar = ({
                         <p>
                           Anual Salary
                           <br />
-                          <strong>{formatCurrency(employer.grossAnnualSalary)}</strong>
+                          <strong>
+                            {formatCurrency(employer.grossAnnualSalary)}
+                          </strong>
                         </p>
                         <p>
                           Pay cycle
@@ -104,7 +97,9 @@ const CustomNavbar = ({
                   </Nav.Link>
                   <Row className="dropdown-section">
                     <Col md={3} className="d-none d-md-block">
-                      <p className="pl-5 font-weight-bold">Contact consultant</p>
+                      <p className="pl-5 font-weight-bold">
+                        Contact consultant
+                      </p>
                     </Col>
                     <Col xs={12} md={9}>
                       <div className="dropdown-content">
