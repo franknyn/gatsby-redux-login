@@ -1,0 +1,32 @@
+.btn-toggle {
+  color: $maxxia-brand;
+  font-weight: 700;
+  min-width: 125px;
+  text-align: right;
+}
+
+.accordion {
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    &.card-header {
+      background: none;
+      margin-bottom: 0;
+    }
+  }
+
+  &.card {
+    .collapse:not(.show) + .toggle {
+      border: 0;
+    }
+  }
+}
+
+.collapse,
+.collapsing {
+  .row {
+    margin-bottom: 0.4rem;
+  }
+}

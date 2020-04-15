@@ -1,0 +1,77 @@
+{
+  "name": "gatsbt-redux-login",
+  "private": true,
+  "description": "A starter that includes and configures react-bootstrap and react-icons, along with SASS handling. ",
+  "version": "0.1.0",
+  "author": "Phat Huynh <phat.huynh.nz@gmail.com>",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "faker": "^4.1.0",
+    "gatsby": "^2.19.2",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-layout": "^1.1.21",
+    "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.4.0",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.10.1",
+    "react": "^16.12.0",
+    "react-animate-height": "^2.0.20",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-code-input": "^3.9.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.8.0",
+    "react-load-image": "^0.1.7",
+    "react-multi-carousel": "^2.4.2",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.4",
+    "cross-env": "^6.0.3",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gh-pages": "^2.0.1",
+    "jsonwebtoken": "^8.2.2",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.19.1",
+    "redux-logger": "^3.0.6",
+    "rootpath": "^0.1.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "svgr": "svgr -d src/images/svg src/components/Icons/",
+    "build": "cross-env GATSBY_THEME=maxxia GATSBY_ACTIVE_ENV=production gatsby build",
+    "postbuild": "cp ./web.config ./public",
+    "develop": "cross-env GATSBY_THEME=maxxia GATSBY_ACTIVE_ENV=development gatsby develop -H 0.0.0.0 -p 8000",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "mockServer": "nodemon mockServer/server.js",
+    "start": "concurrently \"npm run develop\" \"npm run mockServer\"",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "homepage": "https://billyjacoby.github.io/gatsby-react-bootstrap-starter/"
+}

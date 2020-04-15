@@ -1,0 +1,112 @@
+//$primary: $maxxia-brand !default;
+
+.maxxia {
+  h5 {
+    font-size: 18px;
+    color: $black;
+  }
+
+  input {
+    color: $body-color;
+  }
+
+  .bg-triangle {
+    border: 1px solid red;
+    width: 160%;
+    height: 420px;
+    background: $maxxia-brand;
+    background-size: auto, auto, auto;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    margin-left: -30%;
+    margin-right: -30%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+
+  .text-dark {
+    color: $maxxia-dark !important;
+  }
+
+  .custom-control-label::before,
+  .custom-file-label,
+  .custom-select {
+    transition: none;
+  }
+
+  .custom-control-input {
+    border-width: 2px;
+    &:checked ~ .custom-control-label::before {
+      color: $maxxia-brand;
+      border-color: $maxxia-brand;
+      background-color: white;
+    }
+    &:focus ~ .custom-control-label::before {
+      box-shadow: none;
+    }
+    &:not(:disabled):active ~ .custom-control-label::before {
+      background-color: transparent;
+      border-color: $maxxia-dark;
+    }
+  }
+
+  .custom-radio {
+    .custom-control-label {
+      cursor: pointer;
+      padding-left: 3rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      &:after {
+        top: 0.95rem;
+        left: 0.8rem;
+        width: 1.54rem;
+        height: 1.54rem;
+      }
+      &:before {
+        top: 1.15rem;
+        left: 1rem;
+        width: 1.12rem;
+        height: 1.12rem;
+        border: 2px solid $maxxia-dark;
+      }
+    }
+    // .custom-control-input:disabled {
+    //   &:checked ~ .custom-control-label::before {
+    //     background-color: $custom-control-indicator-checked-disabled-bg;
+    //   }
+    // }
+  }
+
+  .alert-danger {
+    color: $maxxia-brand-dark;
+    background-color: #fdebe7;
+    border: 0;
+    border-radius: 0;
+    border-left: 7px solid;
+  }
+
+  .mb-4,
+  .my-4 {
+    margin-bottom: 1.7rem !important;
+  }
+
+  .link {
+    //font-size: 14px;
+    //color: #333333;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    &-primary {
+      color: #333333;
+      font-size: 14px;
+    }
+  }
+
+  .react-code-input {
+    input[value=""] {
+      border-color: #4f4f4f !important;
+    }
+  }
+}

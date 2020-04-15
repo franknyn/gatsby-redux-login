@@ -1,0 +1,29 @@
+.login-option {
+  //border: $card-border-width solid $card-border-color;
+  margin-bottom: 15px;
+  //@include border-radius($card-border-radius);
+  &:last-of-type {
+    margin-bottom: 47px;
+  }
+  &.custom-control {
+    padding-left: 0;
+  }
+
+  &--selected {
+    //background-color: $card-cap-bg;
+    background-color: #f7f7f7;
+  }
+}
+
+.login-container {
+  margin-top: 95px;
+  border-radius: 0.3rem;
+  max-width: calc(100% - 35px);
+
+  @include media-breakpoint-up(md) {
+    max-width: 755px;
+  }
+  // @include media-breakpoint-up(sm) {
+  //   border-radius: 0.3rem;
+  // }
+}

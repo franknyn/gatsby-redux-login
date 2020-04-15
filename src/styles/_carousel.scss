@@ -1,0 +1,34 @@
+@import "../../node_modules/react-multi-carousel/lib/styles.css";
+
+.react-multi-carousel-item {
+  display: flex;
+  flex-direction: column;
+  .card {
+    flex: 1;
+    border-radius: 0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    // &:not(:last-child) {
+    border-bottom: $card-border-width solid $card-border-color;
+    // }
+  }
+  &:not(:last-child) {
+    .card {
+      border-right: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    .card-sub-header {
+      border-left: 1px solid #f7f7f7;
+      margin-left: -1px;
+    }
+  }
+  .card-img {
+    border-radius: 0;
+  }
+}

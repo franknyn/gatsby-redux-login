@@ -1,0 +1,20 @@
+.maxxia {
+  .footer-container {
+    color: $maxxia-footer-text;
+    font-size: 16px;
+    strong {
+      color: $nav-text-color;
+    }
+  }
+
+  .link {
+    &-footer {
+      color: $black;
+      font-size: 16px;
+      margin-bottom: 0.6rem;
+    }
+    &-social {
+      margin-right: 30px;
+    }
+  }
+}

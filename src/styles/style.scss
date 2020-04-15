@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body,
+html {
+  font-size: 18px;
+}
+@import "variables";
+
+// TODO: just important only necessary components from Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "type";
+@import "callouts";
+@import "general";
+@import "layout";
+@import "navbar";
+@import "stepnav";
+@import "carousel";
+@import "login";
+@import "toast";
+@import "maxxia";
+@import "button";
+@import "footer";
+@import "estimate";
+@import "accordion";
+@import "home";
+@import "tooltip";
+@import "loader";

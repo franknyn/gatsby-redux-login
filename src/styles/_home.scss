@@ -1,0 +1,225 @@
+.home-page .section-benefits{
+    padding-top: 132px;
+    padding-bottom: 105px;
+    text-align: center;
+
+    .ui-list-container{
+        padding: 25px 0 72px 0;
+    }
+
+    .ui-list-container .benefit-icon{
+        width: 95px;
+        margin-top:20px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ui-list-container .benefit-option{
+        color: $body-color;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+.home-page > .section,
+.home-page .section-benefits .container{
+    max-width: 996px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2{
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 26px;
+        color: $text-color-light-secordary;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 44px;
+        color: $maxxia-dark;
+        margin-bottom: 27px;
+    }
+
+    p{
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    a{
+        color: $maxxia-dark;
+        text-decoration: underline;
+    }
+
+    .lease-icon{
+        width: 293px;
+    }
+} 
+
+.home-page .section-benefits .container h1{
+    max-width: 592px;
+}
+
+.home-page .section-benefits .container h1,
+.home-page .section-benefits .container h2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.banner-main-bg{
+    min-height: 468px;
+    height: calc(100vh * 0.334);
+    .banner-content{
+        font-size: 56px;
+        text-align: center;
+    }
+}
+
+.banner-brand-bg{
+    background-repeat: no-repeat;
+    height: inherit;
+    border-radius: 5px;
+    .banner-content{
+        font-size: 19px;
+        line-height: 33px;
+        padding: 3px;
+    }
+}
+
+.banner-home-lower{
+    margin: -122px auto 0 auto;
+    width: 94%;
+    min-height: 225px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.16);
+    background-color:$maxxia-brand;
+    padding: 0;
+    max-width: 1046px;
+    border-radius: 5px;
+    .btn-view-estimates{
+        text-align: right;
+    }
+    .btn{
+        padding: 11.5px 27.5px;
+    }
+    .btn:hover{
+        color: $maxxia-brand;
+    }
+}
+
+.home-page .accordion-benefits{
+    hr{
+        margin: 0;
+    }
+    .toggle{
+        background: #f7f7f7;
+        position: relative;
+        display: inline-block;
+        top: -14px;
+        font-weight: bold;
+        font-size: 16px;
+        color: $maxxia-dark;
+        .btn-toggle{
+            font-size: 0;
+            border: solid $maxxia-dark;
+            border-width: 0 1px 1px 0;
+            display: inline-block;
+            padding: 4px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            min-width:5px;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            svg{
+                display:none;
+            }
+        }
+    }
+
+    .toggle > div:first-child{
+        display: inline-block;
+        padding-right: 30px;
+        padding-left: 10px;
+        text-decoration: underline;
+    }
+}
+
+.home-page .section.section-estimate-steps{
+    padding: 72px 0;
+
+    h2.text-brand{
+        color: $maxxia-brand;
+    }
+
+    button{
+        color: $white;
+    }
+}
+
+.home-page .section-testimonials{
+    padding-top: 0;
+    .carousel {
+        .carousel-control-prev,
+        .carousel-control-next{
+            z-index: 10;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon{
+            position: absolute;
+            width: 25px;
+            height: 22px;
+        }
+        .carousel-control-prev-icon{
+            background-image: url('../images/prev-icon.png');
+            left: 0;
+            
+        }
+        .carousel-control-next-icon{
+            background-image: url('../images/next-icon.png');
+            right: 0;
+        }
+        .carousel-item{
+            p{
+                color: $text-color-dark;
+                font-size: 12px;
+                line-height: 44px;
+                text-align: left;
+                margin-bottom: 0;
+            }
+            h3{
+                font-size: 28px;
+                line-height: 36px;
+                color: $maxxia-brand;
+                text-align: left;
+            }
+            .image, svg{
+                max-width: 270px !important;
+                width: 100%;
+            }
+            .carousel-caption{
+                position: relative;
+                left: 0;
+                right: 0;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        } 
+
+        .carousel-indicators{
+            bottom: -45px;
+        }
+
+        .carousel-indicators li{
+            background-color: $text-color-dark;
+            z-index: 10;
+        }
+
+        .carousel-indicators li.active{
+            background-color: $maxxia-brand;
+            z-index: 10;
+        }
+    }
+}

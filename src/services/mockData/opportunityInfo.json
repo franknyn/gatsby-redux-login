@@ -1,0 +1,33 @@
+{
+  "customer": {
+    "id": "210005db-401d-ea11-a811-000d3ad1c2b4",
+    "title": "Miss",
+    "firstName": "Grace",
+    "lastName": "Chap",
+    "email": "chappellian77@gmail.com",
+    "mobile": "0411347318",
+    "leasingCompany": "ABC",
+    "employer": {
+      "payFrequency": "Fortnightly",
+      "payrollId": null,
+      "name": "Monash Health",
+      "grossAnnualSalary": 60000,
+      "employerGRS": {
+        "gstExclusiveDeductionsCode": "No",
+        "leaseITCReturnedCode": null
+      }
+    }
+  },
+  "consultant": {
+    "id": "7921d8d0-7988-e911-a982-000d3ad02a61",
+    "firstName": "Phat",
+    "lastName": "Huynh",
+    "telephone": null,
+    "email": "phat.huynh.nz@gmail.com",
+    "addressLine1": null,
+    "addressLine2": null,
+    "city": null,
+    "state": null,
+    "postCode": null
+  }
+}

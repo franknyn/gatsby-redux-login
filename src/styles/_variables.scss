@@ -1,0 +1,40 @@
+$font-family-sans-serif: "Nunito Sans", "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
+
+$headings-font-weight: 700 !default;
+$color-primary: #20232a;
+
+$light: #e6e6e6 !default;
+//#0CA789
+$info: #0ca789 !default;
+//$navbar-light-color: $info !default;
+$navbar-light-hover-color: #055344 !default;
+
+//for step nav
+$list-group-action-active-color: $info;
+
+$green: #219653 !default;
+
+//for maxxia:
+//$body-color: #777777;
+$body-color: #666666;
+$border-color: #cccccc;
+$nav-text-color: #666666;
+$maxxia-brand: #d14200;
+$maxxia-brand-dark: #ad240a;
+$maxxia-dark: #333333;
+$custom-control-indicator-checked-color: $maxxia-brand !default;
+$navbar-light-color: $nav-text-color !default;
+$card-cap-bg: #f7f7f7;
+$light: #f7f7f7;
+$maxxia-footer-text: #a2a2a2;
+$font-weight-bolder: 700;
+$dark: $maxxia-dark !default;
+$card-inner-border-radius: 5px !default;
+$card-border-radius: 5px !default;
+$card-border-color: $border-color;
+$text-color-light-secordary: #757575;
+$text-color-dark: #999999;
+// $custom-control-indicator-checked-color:        $component-active-color !default;
+// $custom-radio-indicator-icon-checked:           url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='#{$custom-control-indicator-checked-color}'/></svg>") !default;

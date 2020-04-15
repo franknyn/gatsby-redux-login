@@ -1,0 +1,123 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+.clickable {
+  cursor: pointer;
+}
+
+.firstOnly {
+  &:not(:first-child) {
+    background: red;
+  }
+}
+
+.text-medium {
+  font-size: 18px;
+}
+
+.text-largest {
+  font-size: 36px;
+}
+
+.text-larger {
+  font-size: 24px;
+}
+
+.text-small {
+  font-size: 16px;
+}
+
+.text-smaller {
+  font-size: 14px;
+}
+
+.mt-34 {
+  margin-top: 34px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+
+.mb-04rem {
+  margin-bottom: 0.4rem;
+}
+.mb-13rem {
+  margin-bottom: 1.3rem;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.pl-14 {
+  padding-left: 14px;
+}
+.text-header {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-positive {
+  color: #219653;
+}
+
+.text-brand {
+  color: $maxxia-brand;
+}
+
+.ui-list-a {
+  padding-left: 50px;
+  position: relative;
+  .ui-list-icon {
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+}
+
+.bg-grey-secondary{
+  background: $card-cap-bg;
+}
+
+.text-grey-a{
+  color: $body-color;
+}
+
+.bg-brand{
+  background: $maxxia-brand;
+}
+
+.text-brand{
+  color: $maxxia-brand;
+}
+
+.banner-bg{
+  position: relative;
+  width:100%;
+  overflow-y: hidden ! important;
+  overflow-x: hidden ! important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 37px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .banner-container{
+      width:100%;
+  }
+
+  .banner-content{
+      color: $white;
+      width: 100%;
+  }
+}
