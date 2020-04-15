@@ -18,17 +18,10 @@ export function authentication(state = initialState, action) {
         isAuthenticated: false,
       }
     case authConstants.LOGIN_SUCCESS:
-/*
-data={
-  token: user.token,
-  opportunityId,
-  expiresIn: user.expiresIn
-}
-*/
       return {
         isFetching: false,
         isAuthenticated: true,
-        ...action.data
+        ...action.data,
       }
     case authConstants.LOGIN_ERROR:
       return {
@@ -46,7 +39,7 @@ data={
   }
 }
 
-export function accessCode(state = {isFetching: false}, action) {
+export function accessCode(state = { isFetching: false }, action) {
   switch (action.type) {
     case authConstants.ACCESS_CODE_REQUEST:
       return {

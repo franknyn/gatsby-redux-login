@@ -6,17 +6,10 @@ import * as authService from "../services/authenticationService"
 
 import { alertError, alertSuccess, alertClear } from "./alertActions"
 
-
 const requestLogin = () => ({
   type: authConstants.LOGIN_REQUEST,
 })
-/*
-data={
-  token: user.token,
-  opportunityId,
-  expiresIn: user.expiresIn
-}
-*/
+
 const receiveLoginSuccess = data => ({
   type: authConstants.LOGIN_SUCCESS,
   data,
@@ -101,40 +94,3 @@ export function sendAccessCode(opportunityId, authenticationMethod) {
       )
   }
 }
-
-// export function login(username, password) {
-//   return dispatch => {
-//     dispatch(requestLogin({ username }))
-
-//     authService.login({ username, password }).then(
-//       user => {
-//         dispatch(receiveLoginSuccess(user))
-//         navigate(`/app/step1`)
-//       },
-//       error => {
-//         dispatch(receiveLoginError(LOGIN_ERROR_MESSAGE))
-//         dispatch(alertError(LOGIN_ERROR_MESSAGE))
-//       }
-//     )
-//   }
-// }
-
-/*
-
-function getAll() {
-    return dispatch => {
-        dispatch(request());
-
-        userService.getAll()
-            .then(
-                users => dispatch(success(users)),
-                error => dispatch(failure(error))
-            );
-    };
-
-    function request() { return { type: userConstants.GETALL_REQUEST } }
-    function success(users) { return { type: userConstants.GETALL_SUCCESS, users } }
-    function failure(error) { return { type: userConstants.GETALL_FAILURE, error } }
-}
-
-*/

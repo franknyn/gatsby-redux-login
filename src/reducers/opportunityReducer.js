@@ -3,7 +3,6 @@ import { opportunityConstants } from "../constants/actionTypes"
 const initialState = {
   isFetching: false,
 }
-//for secret only
 export function opportunity(state = initialState, action) {
   switch (action.type) {
     case opportunityConstants.CREATE_OPPORTUNITY_REQUEST:
@@ -13,7 +12,7 @@ export function opportunity(state = initialState, action) {
     case opportunityConstants.CREATE_OPPORTUNITY_SUCCESS:
       return {
         isFetching: false,
-        opportunityId: action.opportunityId
+        opportunityId: action.opportunityId,
       }
     case opportunityConstants.CREATE_OPPORTUNITY_ERROR:
       return {
@@ -31,13 +30,11 @@ export function opportunity(state = initialState, action) {
         isFetching: true,
       }
     case opportunityConstants.FETCH_OPPORTUNITY_SUCCESS:
-      //will need to clean up data for opportunity later
-      //For now just store everything
       return {
-          opportunityId: state.opportunityId,
-          ...action.opportunity,
-          isFetching: false,
-        }
+        opportunityId: state.opportunityId,
+        ...action.opportunity,
+        isFetching: false,
+      }
     case opportunityConstants.FETCH_OPPORTUNITY_ERROR:
       return {
         isFetching: false,
